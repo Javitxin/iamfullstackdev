@@ -10,7 +10,7 @@ function InputCreate () {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setRes('')
-    const urlApiCreate = import.meta.env.VITE_APP_API_URL+'create'
+    const urlApiCreate = 'http://localhost:3000/create';
     try {
       const response = await fetch(urlApiCreate, {
         method: 'POST', 
